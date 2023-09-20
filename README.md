@@ -1,1 +1,0 @@
-# medical_inbox_autoreply
