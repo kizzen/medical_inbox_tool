@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;  /* Added this to provide space at the bottom */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.box-container h2 {
+    font-size: 1.5rem;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.box, .response-box {
+    width: 20vw;
+    height: 20vw; 
+    border: 1px solid #000000;
+    padding: 10px;
+    margin-top: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* Always show the scrollbar */
+.box, .response-box {
+    -ms-overflow-style: scrollbar; /* for IE and Edge */
+    scrollbar-width: thin; /* for Firefox */
+}
+
+/* Styles for Webkit browsers like Chrome and Safari */
+.box::-webkit-scrollbar, .response-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.box::-webkit-scrollbar-thumb, .response-box::-webkit-scrollbar-thumb {
+    /* background-color: darkgrey; */
+    background-color: rgb(211, 211, 211);
+    border-radius: 4px;
+}
+
+.box::-webkit-scrollbar-track, .response-box::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+}
+
+.container > .box-container:first-child {
+    margin-right: 5vw;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.generate-button {
+    margin-top: 20px; /* Adjusted spacing here */
+}
+
+.action-button {
+    width: 180px;
+}
+
+.btn-primary.action-button {
+    /* background-color: #2f873b;  Change this to your preferred background color */
+    background-color: #009688;  /* Change this to your preferred background color */
+    
+    color: #ffffff;             /* Change this to your preferred text color */
+    border: none;               /* Removing the default border */
+    transition: 0.3s;           /* Adding a smooth hover effect */
+}
+
+.btn-primary.action-button:hover {
+    background-color: #009688;  /* A slightly darker shade for the hover effect */
+}
+
+.btn-secondary.action-button {
+    background-color: #ff5722;  /* Main button color */
+    color: #ffffff;             
+    border: none;               
+    transition: 0.3s;           /* Adding a smooth hover effect */
+}
+
+.btn-secondary.action-button:hover {
+    background-color: #FF5722;  /* A slightly darker shade for the hover effect */
+    color: #ffffff;             /* Change this to your preferred text color */
+}
+
+.response-title-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.response-comparison-title {
+    text-align: left;
+}
+
+@media (max-width: 1200px) {
+    .box-container h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .box-container h2 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .box-container h2 {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .box-container h2 {
+        font-size: 0.7rem;
+    }
+}

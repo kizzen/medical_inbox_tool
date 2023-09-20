@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<header class="center-text">
+    <h1><br><br><br><br><br><br>Automated Patient Inbox Response</h1>
+</header>
+
+<div class="container">
+    <!-- First box with title -->
+    <div class="box-container">
+        <h2>Patient Message:</h2>
+        <div class="box">
+            {{ question or '' }}
+        </div>
+    </div>
+
+    <!-- Second box with title -->
+    <div class="box-container">
+        <h2>Clinical Notes:</h2>
+        <div class="box">
+            {{ transcription or '' }}
+        </div>
+    </div>
+</div>
+
+<div class="center-text generate-button">
+    <form action="/" method="post">
+        <!-- Hidden input to store the index -->
+        <input type="hidden" id="currentIndex" name="currentIndex" value="{{ index }}">
+        <button type="submit" class="btn btn-primary mb-2 action-button">New Message</button>
+        <br><br><br>
+    </form>
+    <button type="button" class="btn btn-secondary action-button" id="generateResponseBtn">Generate Response</button>
+</div>
+
+<br>
+
+<div class="box-container">
+    <div class="response-title-container">    
+        <h4 class="response-comparison-title">Physician Auto-Response Comparison</h4>
+        <br><br>
+    </div>
+</div>
+
+<div class="container">
+    <!-- First response box for NC -->
+    <div class="box-container">
+        <h2>GPT4 w/o context:</h2>
+        <div class="response-box">
+            {{ answers_nc or '' }}
+        </div>
+        <br><br>
+    </div>
+
+    <!-- Second response box for WC -->
+    <div class="box-container">
+        <h2>GPT4 w/ context:</h2>
+        <div class="response-box">
+            {{ answers_wc or '' }}
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>
