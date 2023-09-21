@@ -4,6 +4,12 @@
 
 This Flask application demonstrates the potential of Large Language Models (LLMs) in automatically generating replies for physician inboxes. Utilizing clinical notes, it produces synthetic questions linked semantically through GPT4. The system then offers answers with and without context, also using GPT4. The primary objective is to create an MVP that explores the viability of assisting doctors in managing their email workload.
 
+To see the app in action, click on the image below.
+
+[![Watch the video](https://img.youtube.com/vi/gOVthMTB5tQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=gOVthMTB5tQ)
+
+For further reading, check out this blog post: [ChatGPT in Healthcare— Are LLMs the Solution to Overflowing Physician Inboxes?](https://medium.com/@ezzine.khalil/chatgpt-in-healthcare-are-llms-the-solution-to-overflowing-physician-inboxes-58d7225ee022). 
+
 ## Features
 
 1. **Automated Replies**: Generates automated replies for overflowing physician inboxes.
