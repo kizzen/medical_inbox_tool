@@ -43,17 +43,17 @@ All contributions are welcome!
 
 While this MVP showcases an exciting application of LLMs in the medical field, there's immense potential for refinement and expansion. It presents a promising vision of how technology could assist in the healthcare sector, sparing doctors from administrative hassles and letting them focus more on patient care.
 
-Note: Before deploying or extending the application, ensure thorough testing, especially given the critical nature of the domain. Always consider the ethical and practical implications of automating processes in healthcare.
+Note: Before deploying or extending the application, ensure thorough testing, especially given the critical nature of the domain. Always consider the ethical and data privacy implications when working on healthcare automation.
 
 ## License
 
-[MIT License](https://github.com/kizzen/pdf-chatbot/blob/main/LICENSE)
+[MIT License](https://github.com/kizzen/medical_inbox_tool/blob/main/LICENSE)
 
 ## Acknowledgments
 
 Inspired by [this article](https://medium.com/@swanson.eric.karl/clinical-inbox-managers-will-need-more-than-llms-to-work-f144929d7057)
 
 ## Contact
-For any queries or feedback, reach out to me at ezzine.khalil@gmail.com or via my [LinkedIn Profile](https://www.linkedin.com/in/kezzine)
+For any queries or feedback, reach out to me at ezzine.khalil@gmail.com or via [LinkedIn](https://www.linkedin.com/in/kezzine)
 
 
