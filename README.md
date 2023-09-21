@@ -51,7 +51,7 @@ Note: Before deploying or extending the application, ensure thorough testing, es
 
 ## Acknowledgments
 
-Inspired by [this article](https://medium.com/@swanson.eric.karl/clinical-inbox-managers-will-need-more-than-llms-to-work-f144929d7057)
+Inspired by [this article](https://medium.com/@swanson.eric.karl/clinical-inbox-managers-will-need-more-than-llms-to-work-f144929d7057).
 
 ## Contact
 For any queries or feedback, reach out to me at ezzine.khalil@gmail.com or via [LinkedIn](https://www.linkedin.com/in/kezzine)
