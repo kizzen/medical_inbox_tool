@@ -19,7 +19,11 @@ def index():
         question = df.iloc[index]['questions']
         transcription = df.iloc[index]['transcription']
 
-    return render_template('index.html', index=index, question=question, transcription=transcription, answers_wc=answers_wc, answers_nc=answers_nc)
+    return render_template('index.html', index=index,
+                        question=question,
+                        transcription=transcription,
+                        answers_wc=answers_wc,
+                        answers_nc=answers_nc)
 
 @app.route('/get_answers', methods=['POST'])
 def get_answers():
