@@ -1,4 +1,4 @@
-# Automated Clinical Inboxes for Physicians
+# Automating Clinical Inboxes for Physicians
 
 ## Overview
 
