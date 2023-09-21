@@ -24,7 +24,7 @@ df = pd.read_csv('data/mtsamples.csv')
 
 # %% ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-def gpt_response(system_message, user_message,): 
+def gpt_response(system_message, user_message): 
     response = openai.ChatCompletion.create(
         model="gpt-4",
         messages=[
@@ -96,7 +96,7 @@ with open(type_file_path, 'r') as json_file:
 
 # %% ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-df = df[:20]
+df = df[:MAX_LEN]
 df['questions'] = questions_list
 df['qtype'] = type_list
 
@@ -164,7 +164,7 @@ for idx, row in df.iterrows():
     answers_list.append(completion)
 df['answers_nc'] = answers_list
 
-# save df (you can just load it)
+# save df for subsequent loading
 df.to_csv('data/df.csv', index=False)
 
 # %% ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
