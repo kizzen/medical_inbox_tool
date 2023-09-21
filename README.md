@@ -18,9 +18,9 @@ For further reading, check out this blog post: [ChatGPT in Healthcare— Are LLM
 
 ### Requirements
 
-- Python 3.x
-- Flask
-- OpenAI's Python SDK
+- python
+- pip
+- OpenAI API key
 
 ## Getting Started
 
