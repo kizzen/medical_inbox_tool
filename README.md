@@ -34,7 +34,7 @@ For further reading, check out this blog post: [ChatGPT in Healthcare— Are LLM
 - `conda activate medical_inbox_env`
 3. Install the necessary packages from requirements.txt into the newly create environment
 - `pip install -r requirements.txt`
-4. Replace config.template.json with config.json and edit config.json with your API key
+4. Replace `config.template.json` with `config.json` and edit `config.json` with your API key
 5. Launch the Flask app from the Terminal
 - `python app.py`
 6. Click the given URL to access the app.: http://127.0.0.1:5000.
