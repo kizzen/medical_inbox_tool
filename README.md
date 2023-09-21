@@ -21,16 +21,16 @@ This Flask application demonstrates the potential of Large Language Models (LLMs
 ### How to Run the Flask App
 
 1. Clone the repository
-- git clone https://github.com/kizzen/medical_inbox_tool.git
+- `git clone https://github.com/kizzen/medical_inbox_tool.git`
 2. In the directory you just cloned, create and activate a new virtual environment
-- cd medical_inbox_tool
-- conda create -n medical_inbox_env
-- conda activate medical_inbox_env
+- `cd medical_inbox_tool`
+- `conda create -n medical_inbox_env`
+- `conda activate medical_inbox_env`
 3. Install the necessary packages from requirements.txt into the newly create environment
-- pip install -r requirements.txt
+- `pip install -r requirements.txt`
 4. Replace config.template.json with config.json and edit config.json with your API key
 5. Launch the Flask app from the Terminal
-- python app.py
+- `python app.py`
 6. Click the given URL to access the app.: http://127.0.0.1:5000.
 
 ### Usage
